@@ -1,0 +1,144 @@
+.contact-section {
+  padding: 6rem 0 0;
+  background-color: white;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.contact-info {
+  background-color: var(--primary);
+  color: white;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-xl);
+}
+
+.contact-info h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+
+.contact-text {
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.icon-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-item h4 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  color: white;
+  opacity: 0.9;
+}
+
+.info-item p {
+  color: white;
+  font-weight: 600;
+}
+
+.contact-form {
+  background-color: #F9FAFB;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  font-family: var(--font-body);
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(76, 110, 245, 0.1);
+}
+
+.submit-btn {
+  width: 100%;
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.footer {
+  background-color: #1F2937;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.made-with {
+  font-size: 0.875rem;
+  color: #9CA3AF;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.status-message {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.status-message.success {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: #4caf50;
+  border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.status-message.error {
+  background-color: rgba(244, 67, 54, 0.1);
+  color: #f44336;
+  border: 1px solid rgba(244, 67, 54, 0.2);
+}

@@ -1,0 +1,38 @@
+import React, { useEffect } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+import './index.css';
+
+function App() {
+  // Smooth scroll polyfill for older browsers and general behavior
+  useEffect(() => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  }, []);
+
+  return (
+    <div className="App">
+      <Navbar />
+      <Hero />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Contact />
+    </div>
+  );
+}
+
+export default App;
