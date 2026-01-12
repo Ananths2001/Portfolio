@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import avatar from '../assets/Ananthprofile.jpeg';
 import './Hero.css';

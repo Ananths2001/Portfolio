@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
+// eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
 import std from '../assets/std.png';
 import projectImg from '../assets/portfolio.png';
