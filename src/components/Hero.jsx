@@ -28,6 +28,9 @@ const Hero = () => {
               <a href="#contact" className="btn btn-outline">
                 Contact Me <Mail size={20} />
               </a>
+              <a href="/resume.pdf" download className="btn btn-outline">
+                Resume <Download size={20} />
+              </a>
             </div>
 
             <div className="social-links">
