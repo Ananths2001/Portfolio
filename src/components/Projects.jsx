@@ -14,7 +14,10 @@ const projectsData = [
     image: std,
     description: 'A full-stack Student Enrollment Management Application built with the MERN stack. Features include student registration, data filtering, and admin management.',
     tags: ['React', 'Node.js', 'Express', 'MongoDB'],
-    links: { demo: '#', github: '#' }
+    links: { 
+      demo: 'https://student-enroll-app-git-main-ananths2001s-projects.vercel.app', 
+      github: 'https://github.com/Ananths2001/Student-Enroll-App' 
+    }
   },
   {
     id: 2,
@@ -23,7 +26,10 @@ const projectsData = [
     image: projectImg,
     description: 'Modern, responsive portfolio website featuring 3D elements, smooth animations, and email contact integration.',
     tags: ['React', 'Framer Motion', 'EmailJS', 'CSS'],
-    links: { demo: '#', github: '#' }
+    links: { 
+      demo: '#', 
+      github: 'https://github.com/Ananths2001/Portfolio' 
+    }
   }
 ];
 
